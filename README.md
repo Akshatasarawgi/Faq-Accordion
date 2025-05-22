@@ -13,7 +13,7 @@ Your users should be able to:
 
 ### Links
 - Solution URL: [https://github.com/Akshatasarawgi/Faq-Accordion]
-- Live Site URL: 
+- Live Site URL: [https://faqaccordionma.netlify.app]
 
 ## My process
 
