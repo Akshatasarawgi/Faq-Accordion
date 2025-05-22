@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { 
+--white: hsl(0, 100%, 100%);
+--purple-100: hsl(275, 100%, 97%);
+--purple-600: hsl(292, 16%, 49%);
+--purple-950: hsl(292, 42%, 14%);
+--font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--purple-100);
+}
+
+button {
+    all: unset;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.background-head {
+    height: 20rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.container {
+    width: clamp(355px, 60%, 650px);
+    height: max-content;
+    background-color: var(--white);
+    margin: clamp(153px , 12% , 200px) auto;
+    padding: 2%;
+    border-radius: 10px;
+    z-index: 102;
+    font-family: var(--font-family);
+    position: relative;
+   
+}
+
+.container > div {
+    margin: 3% 0;
+}
+
+.question-list {
+     margin: 2% 0;
+     border-bottom: 1px solid var(--purple-100);
+     padding: 2% 0;
+}
+
+.question-list:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+ 
+.faq {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 1% 0;
+    align-items: center;
+}
+
+.faq img {
+    height: 2em;
+}
+
+.faq h1 {
+    font-size: 3em;
+    color: var(--purple-950);
+}
+
+.symbol {
+    align-self: flex-end;
+}
+
+.symbol:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.question {
+    color: var(--purple-950);
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.question:hover {
+    color: var(--purple-600);
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    max-height: 0px;
+    margin: 1% 0;
+    font-size: 1.15rem;
+    color: var(--purple-600);
+    font-weight: 400;
+    transition: max-height 0.6s ease;
+    overflow: hidden;
+}
+
+.answer.active {
+    display: block;
+    max-height: 400px;
+}
+
+
